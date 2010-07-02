@@ -1,0 +1,11 @@
+<project name="Calculator" default="compile" basedir=".">
+    <description>
+        A simple calculator
+    </description>
+
+    <target name="compile" description="compile the project.">
+        <javac srcdir="." destdir=".">
+            <classpath path=".:/usr/share/java/cup.jar"/>
+        </javac>
+    </target>
+</project>
