@@ -1,0 +1,20 @@
+# Java-Calculator
+
+
+This is a simple calculator application.  The goal is to explore java and its ability to do lexing, parsing, and semantic analysis.  It isn't meant to do anything fancy, just to be a good place to explore those four things.
+
+## The Lexer
+
+The Lexer uses the input file `calculator.flex` which is in the flex-style format used by JFlex.  It stores a series of regular expressions which it uses to tokenize the input.  This converts the input into a stream of tokens which are Symbol objects with the types listed in `sym.java`.
+
+For more information see [The Manual](http://jflex.de/manual.html).
+
+## The Parser
+
+The Parser is created through Cup, and is specified in `calculator.cup`.  It is similar in format to YACC files.  These files describe a context-free grammar and actions to perform when each is matched.  These actions let us build up a tree which is passed back to the program and can be evaluated.
+
+For more information see [the manual](http://www.cs.princeton.edu/~appel/modern/java/CUP/manual.html).
+
+## Semantic Analysis
+
+## Java Observations
